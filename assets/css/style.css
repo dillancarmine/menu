@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  color: yellow;
+}
+
+.background {
+  position: relative;
+  min-height: 100vh;
+}
+
+.background::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("../img/fondo.png") center/cover no-repeat;
+  filter: blur(5px) brightness(0.5);
+  z-index: -1;
+}
+
+.section {
+  padding: 50px 20px;
+}
+
+.crd-cstm {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.crd-cstm:hover {
+  transform: scale(1.05);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.titulo {
+  font-family: "Sour Gummy", italic;
+  font-size: 5vh;
+  padding: 10px;
+}
+
+.subtitulo {
+  font-family: "Potta One", cursive;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Stylish";
+  font-weight: bold;
+}
+
+p {
+  font-family: "Stylish", cursive;
+}
+
+.card-title,
+.card-text {
+  color:khaki;
+}
+
+.card-price {
+  color: lightskyblue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.msg {
+  font-family: "Potta One";
+  text-align: center;
+  font-weight: bolder;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: white;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-family: "Sour Gummy";
+  color: yellow;
+}
